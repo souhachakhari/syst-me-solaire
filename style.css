@@ -1,0 +1,74 @@
+/* Style général */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #1a1a40, #000);
+  color: #fff;
+  text-align: center;
+}
+
+/* En-tête */
+header {
+  padding: 20px;
+  background-color: #4c4cff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+}
+
+/* Conteneur principal */
+#quiz-container {
+  margin:155px auto;
+  max-width: 600px;
+  padding: 20px;
+  background: #2a2a5e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#question-box {
+  margin-bottom: 20px;
+}
+
+#answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button.answer {
+  padding: 10px;
+  font-size: 1rem;
+  background: #4c4cff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.answer:hover {
+  background: #2a2aa5;
+}
+
+#result {
+  margin-top: 20px;
+  display: none;
+}
+
+/* Pied de page */
+footer {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 0.8rem;
+  background-color: #1a1a40;
+}
