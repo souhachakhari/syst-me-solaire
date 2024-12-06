@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Suivez les dernières actualités sur le système solaire, de Mercure à Jupiter. Découvrez les découvertes scientifiques et les missions spatiales en cours.">
+        <meta name="author" content="Votre Nom ou Entreprise">
+        <meta name="keywords" content="système solaire, actualités, planètes, espace, missions spatiales">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>News</title>
+        
+    <style>
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("planètes.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFA500; /* Soft Orange */
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+nav.main-nav {
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #FFB84D; /* Soft orange-yellow */
+}
+/* Main Content */
+main {
+    margin-top: 120px; /* Adjust for fixed header */
+    padding: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.planet-news {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.planet-news:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.planet-news h2 {
+    font-size: 2rem;
+    color: #FFA500; /* Soft Orange */
+    margin-bottom: 10px;
+}
+.planet-news p {
+    font-size: 1.1rem;
+    color: #ddd;
+    line-height: 1.7;
+}
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #FFA500; /* Soft Orange */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.read-more:hover {
+    color: #FFB84D; /* Soft yellow-orange on hover */
+    text-decoration: underline;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+footer p {
+    margin: 0;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+    .planet-news {
+        padding: 15px;
+        margin: 10px;
+    }
+    .planet-news h2 {
+        font-size: 1.8rem;
+    }
+    .read-more {
+        font-size: 1rem;
+    }
+}
+/* Animation for page fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Slightly transparent gradient background */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("étoile.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* Subtle hover effects */
+.planet-news:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+.read-more {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFA500; /* Soft orange */
+    transition: all 0.3s ease;
+}
+.read-more:hover {
+    color: #FFB84D;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+    
+    
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="https://example.com">Mercure</a></li>
+                <li><a href="https://example.com">Vénus</a></li>
+                <li><a href="https://example.com">Terre</a></li>
+                <li><a href="https://example.com">Mars</a></li>
+                <li><a href="https://example.com">Jupiter</a></li>
+                <li><a href="https://example.com">Saturne</a></li>
+                <li><a href="https://example.com">Uranus</a></li>
+                <li><a href="https://example.com">Neptune</a></li>
+                <li><a href="https://example.com">Pluton</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Mercure -->
+        <section id="mercury" class="planet-news">
+            <h2>Mercure : Anomalies magnétiques et nouvelles recherches</h2>
+            <p>Récemment, une étude menée par la NASA a révélé des anomalies dans le champ magnétique de Mercure, qui pourraient indiquer des caractéristiques inattendues dans son noyau. Des chercheurs affirment que ces découvertes pourraient redéfinir la manière dont les planètes terrestres se sont formées. En outre, des données de la sonde MESSENGER montrent que Mercure possède des régions inexplorées qui pourraient contenir de la glace d'eau sous sa surface.</p>
+            <a href="https://example.com" class="read-more" target="_blank" rel="noopener noreferrer">Lire la suite</a>
+        </section>
+        <!-- Vénus -->
+        <section id="venus" class="planet-news">
+            <h2>Vénus : Détecter des volcans en activité sous les nuages</h2>
+            <p>La mission VERITAS, lancée par la NASA, cherche à lever le voile sur l'activité géologique de Vénus. Des détecteurs ont récemment capté des signes de volcans en activité sous les nuages épais de la planète, en particulier autour de l'équateur de Vénus. Ces découvertes pourraient avoir des implications sur la possibilité d’une activité interne en cours sur la planète voisine de la Terre. Des chercheurs envisagent également des missions pour étudier l’atmosphère dense et corrosive de Vénus, en particulier sa composition chimique.</p>
+            <a href="https://example.com" class="read-more" target="_blank" rel="noopener noreferrer">Lire la suite</a>
+        </section>
+        <!-- Terre -->
+        <section id="earth" class="planet-news">
+            <h2>Terre : Prévisions sur l'impact des météorites et technologies avancées</h2>
+            <p>Les récentes études sur les météorites ont montré qu’elles pouvaient jouer un rôle clé dans la distribution des éléments nécessaires à la vie. Les scientifiques surveillent de près les trajectoires de plusieurs astéroïdes proches de la Terre. Des avancées technologiques permettent désormais de mieux prédire les impacts potentiels grâce à des radars puissants et des systèmes de suivi en temps réel. Ces recherches ouvrent la voie à la création de technologies capables de dévier des objets célestes dangereux.</p>
+            <a href="https://example.com" class="read-more" target="_blank" rel="noopener noreferrer">Lire la suite</a>
+        </section>
+        <!-- Mars -->
+        <section id="mars" class="planet-news">
+            <h2>Mars : Découverte de traces d'eau ancienne et impact sur la recherche de vie</h2>
+            <p>Le rover Perseverance a récemment détecté des traces d'eau qui auraient existé sous forme liquide sur Mars il y a des milliards d'années. Cette découverte a des implications majeures pour la recherche de la vie sur Mars. De plus, des échantillons collectés par le rover devraient bientôt être envoyés vers la Terre pour des analyses approfondies. L'une des découvertes les plus importantes pourrait être la présence de molécules organiques, potentiellement liées à des formes de vie passées.</p>
+            <a href="https://example.com" class="read-more" target="_blank" rel="noopener noreferrer">Lire la suite</a>
+        </section>
+        <!-- Jupiter -->
+        <section id="jupiter" class="planet-news">
+            <h2>Jupiter : Analyse des tempêtes géantes et nouveaux phénomènes atmosphériques</h2>
+            <p>Les astronomes ont récemment observé des changements dans les célèbres tempêtes de Jupiter, notamment la Grande Tache Rouge, qui semble perdre de sa couleur et de sa taille. De nouvelles observations réalisées par le télescope Hubble ont montré des variations climatiques étonnantes dans l'atmosphère de la géante gazeuse. Ces phénomènes pourraient fournir des informations sur les cycles climatiques de Jupiter, et potentiellement sur l'évolution de ses tempêtes au fil du temps.</p>
+            <a href="https://example.com" class="read-more" target="_blank" rel="noopener noreferrer">Lire la suite</a>
+        </section>
+        <!-- Saturne -->
+        <section id="saturn" class="planet-news">
+            <h2>Saturne : Des anneaux en déclin et la mission Cassini</h2>
+            <p>La mission Cassini a révélé que les anneaux de Saturne, bien que spectaculaires, se dissolvent à un rythme alarmant. Les scientifiques ont découvert que les anneaux de la planète géante sont faits de poussière et de glace qui sont en train d’être absorbés par l’atmosphère de Saturne. Cette découverte fait partie des dernières données recueillies par la sonde Cassini avant son plongeon dans l’atmosphère de Saturne en 2017, marquant la fin d'une mission de 20 ans.</p>
+            <a href="https://example.com" class="read-more" target="_blank" rel="noopener noreferrer">Lire la suite</a>
+        </section>
+        <!-- Uranus -->
+        <section id="uranus" class="planet-news">
+            <h2>Uranus : Lune mystérieuse et atmosphère glacée</h2>
+            <p>Uranus, l'une des planètes les moins explorées du système solaire, continue de fasciner les astronomes. De récentes simulations informatiques ont révélé que les lunes glacées d'Uranus pourraient abriter des océans cachés sous leurs surfaces gelées. Les chercheurs souhaitent envoyer une mission pour explorer cette possibilité, qui pourrait offrir des indices sur l'habitabilité d'autres mondes. Par ailleurs, des études récentes de son atmosphère révèlent des vents ultra-rapides et des conditions extrêmes.</p>
+            <a href="https://example.com" class="read-more" target="_blank" rel="noopener noreferrer">Lire la suite</a>
+        </section>
+        <!-- Neptune -->
+        <section id="neptune" class="planet-news">
+            <h2>Neptune : Exploration des vents et de la dynamique atmosphérique</h2>
+            <p>Les vents supersoniques de Neptune ont été observés de plus près grâce à des télescopes améliorés. Ces vents atteignent des vitesses proches de 2 000 km/h, ce qui fait de Neptune une planète avec l'une des atmosphères les plus dynamiques du système solaire. Les scientifiques cherchent à mieux comprendre comment la planète parvient à maintenir ces conditions extrêmes malgré sa distance du Soleil.</p>
+            <a href="https://example.com" class="read-more" target="_blank" rel="noopener noreferrer">Lire la suite</a>
+        </section>
+        <!-- Pluton -->
+        <section id="pluto" class="planet-news">
+            <h2>Pluton : Des découvertes géologiques récentes</h2>
+            <p>Les dernières données envoyées par la sonde New Horizons ont permis de révéler des formations géologiques complexes sur la surface de Pluton, incluant des montagnes de glace et des plaines lisses. Ces découvertes, couplées avec des observations des geysers de glace, modifient notre compréhension de la planète naine et de ses activités géologiques internes. Pluton, bien que classée comme une planète naine, continue d'offrir de nombreuses surprises aux scientifiques.</p>
+            <a href="https://example.com" class="read-more" target="_blank" rel="noopener noreferrer">Lire la suite</a>
+        </section>
+    </main>
+        
+    
+    <footer>
+        <p>&copy; 2024 Actualités du Système Solaire. Tous droits réservés.</p>
+    </footer>
+    
+</body>
+</html>
