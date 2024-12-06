@@ -66,3 +66,7 @@ restartButton.addEventListener("click", () => {
 });
 
 loadQuestion();
+loadQuestion();
+function goHome() {
+  window.location.href = "home.html"; // Changez "index.html" par votre page d'accueil réelle.
+}
